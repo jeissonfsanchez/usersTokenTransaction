@@ -7,17 +7,27 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel - Token Transaction
+## Acerca de Users Token Transaction
 
-Se debe colocar el token en el env.example
+Este proyecto es un test.
+
+Información importante:
 
 - Se debe poner el token en el [env.example](.env.example) al final del archivo .
-- Ejecutar el comando php artisan migrate --seed para correr las migraciones y el seeder que toma la data del API.
+- Se usa el patrón repositorio con interfaz en este test.
+  
+Ejecutar los commandos:
 
-El proyecto usa un [Helper](app/Helpers/ConectadosApi.php) para obtener la data
+1. composer install
+2. cp .env.example .env
+3. php artisan migrate --seed para correr las migraciones y el seeder que toma la data del API.
 
-En la vista [welcome](resources/views/welcome.blade.php) se indica cómo acceder a la información del punto 8
+A tener en cuenta:
 
-Para acceder al punto 9 es con el endpoint [users/{search?}](routes/api.php) que está en api.php
+- El proyecto usa un [Helper](app/Helpers/ConectadosApi.php) para obtener la data
 
-Se usa el patrón repositorio en este test.
+- En la vista [welcome](resources/views/welcome.blade.php) se indica cómo acceder a la información del punto 8
+
+Endpoints:
+
+- Para acceder al punto 9 es con el endpoint [users/{search?}](routes/api.php) que está en api.php
